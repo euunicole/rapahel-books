@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Todos os livros </a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Indicação do Raphael</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Top Livros do Raphael Montes</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">outros livros de suspense</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" width="50px" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Raphael's</b>Books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Todos os livros</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Indicação do Raphael</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Top livros do Raphaek</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Outros livros</a>
+          </li>
+         </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Curte um livro de suspense ou terror psicologico?</h2>
+    <p class="banner__texto">Encontre em nossa estante um livro aterrorizante!!!!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Todos os livros </h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/uma familia feliz.png"
+            alt="Livro uma familia feliz"></div>
+          <div class="swiper-slide"><img src="img/Jantar secreto.png"
+              alt="Livro jantar secreto"></div>
+          <div class="swiper-slide"><img src="img/suicidas.png" alt="Livro suicidas">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/dias perfeitos.png" alt="Livro dias perfeitos" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/uma mulher no escuro.png" alt="Livro uma mulher no escuro" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Bom Dia, Verônica.png" alt="Livro bom dia veronica" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/O Vilarejo.png" alt="Livro o Vilarejo"  />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/magica mortal.png" alt="Livro magica mortal" />
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- 1º linha -->
+          <div class="card__descrição">
+            <!-- 1º coluna -->
+            <div class="descrição">
+              <h3 class="descrição__titulo">Compre aqui os livros do Raphael montes</h3>
+              <h2 class="descrição__titulo-livro">Livros com os melhores descontos</h2>
+              <p class="descrição__texto">Raphael Montes é um escritor e roteirista brasileiro de literatura policial.</p>
+            </div>
+            <!-- 2º coluna -->
+            <img src="img/raphel montes.png" class="Raphael montes">
+          </div>
+  
+          <!-- 2º linha -->
+          <div class="card__botões">
+            <!-- 1º coluna -->
+            <ul class="botões">
+              <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+              <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+            </ul>
+            <!-- 2º coluna -->
+            <a href="https://www.raphaelmontes.com.br/" class="botões__ancora" container>Compre aqui</a>
+          </div>
+        </div>
+      </div>
+
+      
+  
+    </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo"> Top livros do Raphael Montes</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Jantar secreto.png"
+              alt="Livro Jantar secreto"></div>
+          <div class="swiper-slide"><img src="img/uma familia feliz.png" alt="Livro uma familia feliz">
+          </div>
+          <div class="swiper-slide"><img src="img/suicidas.png" alt="Livro suicidas">
+          </div>
+          <div class="swiper-slide"><img src="img/dias perfeitos.png" alt="Livro dias perfeitos"></div>
+          <div class="swiper-slide"><img src="img/uma mulher no escuro.png" alt="Livro uma mulher no escuro"></div>
+          <div class="swiper-slide"><img src="img/O Vilarejo.png" alt="livro o Vilarejo"></div>
+          <div class="swiper-slide"><img src="img/magica mortal.png" alt="livro magica mortal"></div>
+          <div class="swiper-slide"><img src="img/Bom Dia, Verônica.png" alt="livro bom dia veronica"></div>
+        </div>
+
+       
+       
+      </div>
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Agatha Christie </h2>
+            <p class="descrição__texto">
+              Uma das autoras indicado pelo escritor Raphael Montes!
+          </div>
+          <img src="img/agatha livros.png" width="400px" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          
+          <a href="https://www.amazon.com.br/s?k=aghata+crhistie&i=stripbooks&crid=33YBZ04EDERSO&sprefix=agh%2Cstripbooks%2C323&ref=nb_sb_ss_ts-doa-p_1_3" class="botões__ancora" container>Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+      
+
+    <section class=”carrossel”>
+      <h2 class="carrossel__titulo"> Outros livros </h2>
+  
+      <div class="carrossel__container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="img/a mulher da janela.png"
+                alt="Livro Jantar secreto"></div>
+            <div class="swiper-slide"><img src="img/8 assasinatos.png" alt="Livro uma familia feliz">
+            </div>
+            <div class="swiper-slide"><img src="img/a empregada.png" alt="Livro suicidas">
+            </div>
+            <div class="swiper-slide"><img src="img/a estranha.png" alt="Livro dias perfeitos"></div>
+            <div class="swiper-slide"><img src="img/filha perfeita.png" alt="Livro uma mulher no escuro"></div>
+            <div class="swiper-slide"><img src="img/um de nós.png" alt="livro o Vilarejo"></div>
+            <div class="swiper-slide"><img src="img/verity.png" alt="livro magica mortal"></div>
+            <div class="swiper-slide"><img src="img/o paciente.png" alt="livro bom dia veronica"></div>
+            <div class="swiper-slide"><img src="img/manual.png" alt="livro bom dia veronica"></div>
+            <div class="swiper-slide"><img src="img/o bebe.png" alt="livro bom dia veronica"></div>
+
+          </div>
+
+          <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+              <!-- 1º coluna -->
+              <div class="descrição">
+                <h3 class="descrição__titulo">Compre outros livros de suspense</h3>
+                <h2 class="descrição__titulo-livro">Livros os melhores preços e com a melhor qualidade</h2>
+                <p class="descrição__texto">Entre na Amazon para ter acesso à outros livros .</p>
+              </div>
+              <!-- 2º coluna -->
+              <img src="img/amazon.png" class="amazon">
+            </div>
+    
+            <!-- 2º linha -->
+            <div class="card__botões">
+              <!-- 1º coluna -->
+              <ul class="botões">
+                
+              <!-- 2º coluna -->
+              <a href="https://www.amazon.com.br/s?k=livros+de+suspense+e+terror+psicologico&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1STFNKAIY5F08&sprefix=livros+de+suspense+e+terror+psicologic%2Caps%2C203&ref=nb_sb_noss" class="botões__ancora" container>Compre aqui</a>
+            </div>
+          </div>
+        </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">O Vilarejo</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Raphael montes</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suicidas</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jantar secreto</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Verity</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Oito assasinatos perfeitos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mágica Mortal</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Manual de assasito para boas garotas</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Raphael's Books</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Parcerias com</li>
+      <li class="lista-rodapé__item">
+        <img src="img/amazon.png" width="40px" alt="amazon" />
+        <a href="#" class="lista-rodapé__link">Amazon</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/rm.png" width="30px" alt="Raphael Montes" />
+        <a href="#" class="lista-rodapé__link">Raphael Montes</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Editoras</li>
+      <li class="lista-rodapé__item">
+        <img src="img/rocco.png" width="30px" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">rocco</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/darkside.png" width="35px" alt="darkside" />
+        <a href="#" class="lista-rodapé__link">darkside</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/alt.png" width="30px" alt="alt" />
+        <a href="#" class="lista-rodapé__link">ALT</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/intriseca.png" width="30px" alt="intriseca" />
+        <a href="#" class="lista-rodapé__link">Intríseca</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/comp das letras.png" width="30px" alt="comp das letras" />
+        <a href="#" class="lista-rodapé__link">Companhia das letras</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/janganda.png" width="30px" alt="janganda" />
+        <a href="#" class="lista-rodapé__link">Jangada</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/galera.png" width="30px" alt="galera" />
+        <a href="#" class="lista-rodapé__link">Galera</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Escritores</li>
+      <li class="lista-rodapé__item">
+        <img src="img/raphel montes.png" width="30px" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Raphael Montes</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/agatha.png" width="30px" alt="agatha" />
+        <a href="#" class="lista-rodapé__link">Agatha Christie</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/freida.png" width="30px" alt="freida" />
+        <a href="#" class="lista-rodapé__link">freida mcfadden</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/A. J. Finn.png" width="30px" alt="aj" />
+        <a href="#" class="lista-rodapé__link">A. J. Finn</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/liz.png" width="30px" alt="Liz Nugent
+        " />
+        <a href="#" class="lista-rodapé__link">Liz Nugent
+        </a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Collen.png" width="30px" alt="collen" />
+        <a href="#" class="lista-rodapé__link">Collen Hoover</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/holly.png" width="30px" alt="Holly Jackson
+        " />
+        <a href="#" class="lista-rodapé__link">Holly Jackson
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
